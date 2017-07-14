@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+set -o errexit
+set -o errtrace
+
+DATE=$1
+
+if [ -z "$DATE" ]; then
+  DATE=`date +%Y-%m-%d`
+fi
+
+if [ ! -z "`find _posts -type f -name "*$DATE*"`" ]; then
+  echo "Error: post already exists for $DATE"
+  exit 1
+fi
+
+DAYOFWEEK=`date -j -f "%Y-%m-%d" "$DATE" "+%w"`
+
+if [ "$DAYOFWEEK" -eq 0 ]; then
+  DAYOFWEEK="sunday"
+elif [ "$DAYOFWEEK" -eq 1 ]; then
+  DAYOFWEEK="monday"
+elif [ "$DAYOFWEEK" -eq 2 ]; then
+  DAYOFWEEK="tuesday"
+elif [ "$DAYOFWEEK" -eq 3 ]; then
+  DAYOFWEEK="wednesday"
+elif [ "$DAYOFWEEK" -eq 4 ]; then
+  DAYOFWEEK="thursday"
+elif [ "$DAYOFWEEK" -eq 5 ]; then
+  DAYOFWEEK="friday"
+elif [ "$DAYOFWEEK" -eq 6 ]; then
+  DAYOFWEEK="saturday"
+else
+  echo "Error: '$DAYOFWEEK' is a weird day of week"
+  exit 1
+fi
+
+FILENAME="_posts/$DATE-$DAYOFWEEK.md"
+
+echo "---"                     >> $FILENAME
+echo "layout: post"            >> $FILENAME
+echo "date: $DATE"             >> $FILENAME
+echo "categories: wod"         >> $FILENAME
+echo "---"                     >> $FILENAME
+echo ""                        >> $FILENAME
+echo "4 minute something"      >> $FILENAME
+echo "- 10 exercise one 65/95" >> $FILENAME
+echo "- 20 exercise two 20/24" >> $FILENAME
+echo ""                        >> $FILENAME
+echo "**Chris - ?? RX**"       >> $FILENAME
+
+vi $FILENAME
