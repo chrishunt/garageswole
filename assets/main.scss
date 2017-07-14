@@ -1,0 +1,43 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+body, html, * {
+  font-family: "felt-tip-roman", "Helvetica Neue", sans-serif;
+  font-size: 28px;
+}
+
+.wrapper {
+  max-width: -webkit-calc(800px - (30px * 2));
+  max-width: calc(800px - (30px * 2));
+}
+
+strong {
+  color: #f00;
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.site-footer, .site-header {
+  border: none;
+}
+
+.post-title {
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 36px;
+}
+
+a, a:visited, a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.post-header {
+  margin-bottom: 0;
+}
