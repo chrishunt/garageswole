@@ -15,8 +15,11 @@ body, html, * {
 }
 
 strong {
-  color: #f00;
   font-weight: normal;
+}
+
+strong span {
+  color: #49a15f;
 }
 
 ul {
