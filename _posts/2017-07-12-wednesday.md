@@ -6,4 +6,4 @@ categories: wod
 
 100 push-ups for time
 
-**Chris - 3:39 RX**
+**Chris - <span>3:39 RX</span>**
