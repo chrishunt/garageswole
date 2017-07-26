@@ -1,3 +1,3 @@
-How did I do last time? Virtual whiteboard of workouts.
+How did I do last time?
 
 ![](screenshot.png)
