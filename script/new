@@ -36,16 +36,17 @@ fi
 
 FILENAME="_posts/$DATE-$DAYOFWEEK.md"
 
-echo "---"                            >> $FILENAME
-echo "layout: post"                   >> $FILENAME
-echo "date: $DATE"                    >> $FILENAME
-echo "categories: wod"                >> $FILENAME
-echo "---"                            >> $FILENAME
-echo ""                               >> $FILENAME
-echo "4 minute something"             >> $FILENAME
-echo "- 10 exercise one 65/95"        >> $FILENAME
-echo "- 20 exercise two 20/24"        >> $FILENAME
-echo ""                               >> $FILENAME
-echo "**Chris - <span>?? RX</span>**" >> $FILENAME
+echo "---"                       >> $FILENAME
+echo "layout: post"              >> $FILENAME
+echo "date: $DATE"               >> $FILENAME
+echo "categories: wod"           >> $FILENAME
+echo "---"                       >> $FILENAME
+echo ""                          >> $FILENAME
+echo "<!--"                      >> $FILENAME
+echo "**Chris - <span></span>**" >> $FILENAME
+echo "-->"                       >> $FILENAME
+echo ""                          >> $FILENAME
+echo "Strength"                  >> $FILENAME
+echo "- "                        >> $FILENAME
 
 vi $FILENAME
