@@ -36,17 +36,19 @@ fi
 
 FILENAME="_posts/$DATE-$DAYOFWEEK.md"
 
-echo "---"                       >> $FILENAME
-echo "layout: post"              >> $FILENAME
-echo "date: $DATE"               >> $FILENAME
-echo "categories: wod"           >> $FILENAME
-echo "---"                       >> $FILENAME
-echo ""                          >> $FILENAME
-echo "<!--"                      >> $FILENAME
-echo "**Chris - <span></span>**" >> $FILENAME
-echo "-->"                       >> $FILENAME
-echo ""                          >> $FILENAME
-echo "Strength"                  >> $FILENAME
-echo "- "                        >> $FILENAME
+echo "---"                                          >> $FILENAME
+echo "layout: post"                                 >> $FILENAME
+echo "date: $DATE"                                  >> $FILENAME
+echo "categories: wod"                              >> $FILENAME
+echo "---"                                          >> $FILENAME
+echo ""                                             >> $FILENAME
+echo "<!--"                                         >> $FILENAME
+echo "**Chris - <span></span>**"                    >> $FILENAME
+echo "-->"                                          >> $FILENAME
+echo ""                                             >> $FILENAME
+echo "Strength"                                     >> $FILENAME
+echo "- "                                           >> $FILENAME
+echo ""                                             >> $FILENAME
+echo "(from [@crossfitpd](http://crossfitpd.com)) " >> $FILENAME
 
 vi $FILENAME
