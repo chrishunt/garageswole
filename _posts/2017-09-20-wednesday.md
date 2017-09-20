@@ -14,4 +14,4 @@ seconds rest, 20 seconds work (totaling 4 minutes).
 - 1 minute rest
 - tabata row
 
-Sum up your lowest reps from each tabata, that's you score.
+**Chris - <span>947m, 139 squats, 925m</span>**
