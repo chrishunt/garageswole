@@ -17,7 +17,7 @@ Every 5:00 x 4
 
 5 rounds, for time
 - 12 calorie bike
-- 6 bar muscle ups
+- 6 bar muscle-ups
 
 **Chris - <span>10:42 (400m run instead of bike)</span>**
 
