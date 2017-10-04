@@ -20,7 +20,7 @@ categories: wod
 - 10 overhead jumping lunges (20kg/45lb)
 - 2:00 rest
 
-**Chris - <span>yep</span>**
+**Chris - <span>3 rounds, then fell asleep on the floor</span>**
 
 For quality, 5 rounds of
 - 0:45 hollow hold
