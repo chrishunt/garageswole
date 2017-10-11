@@ -19,4 +19,4 @@ For reps, 3 rounds of 4:00 AMRAP (rest 1:00 between rounds)
 - 10 deadlifts (84kg/185lb)
 - 30 double-unders
 
-**Chris - <span>9+2 (3, 3+1, 3+1)</span>**
+**Chris - <span>9+2 (3, 3+1, 3+1) with kipping muscle-ups</span>**
